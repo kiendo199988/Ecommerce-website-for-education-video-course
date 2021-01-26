@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Register</title>
+  </head>
+<body>
+ <div class="wrapper">
+  <header>
+   <div class="nav">
+    <nav>
+     <ul class="nav-dropdown">
+          <li class="logo-wrapper"><a href="index.html"><img class="logo" src="img\git-gud-logo.png"></a></li>
+          <li><h1><a href = "index.html">GitGud</a></h1></li>
+          <li class="searchbar"><input type="text" class="search-input" placeholder="Search.."></li>
+          <li class ="home"><a href="index.html">Home</a></li>
+          <li class="contact"><a href="contact-beforelogin.html">Contact</a></li>
+          <li class="about-us"><a href="aboutUs-beforelogin.html">About us</a></li>
+          <li><a href="cart-beforelogin.html"><img class="icon" src="img\bucket.png"></a></li>
+        <li class="icon-dropdown"><a href="login.html">Login</a>
+     </ul>
+    </nav>
+   </div>
+  </header>
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------->
+                                                          <!--showcase-->
+                   <div class="container">
+                    <img src="img\showcase.jpg" alt="Showcase" class="showcase">
+                    <div class="text"><h1>GitGud</h1><br> <p>Learn Programming Online - Get Good At C# Programming</p></div>
+                  </div>
+
+
+<!--registerForm----------------------------------------------------------------------------->
+<div id ="registrationForm-wrapper">
+                    <h2 class="register-header">Become a GitGuder!</h2>
+                <form class="registrationForm" method="post" action="registerscr.php" onsubmit="return Validate();" name ="registrationForm">
+
+                     <div class="username_div">
+                       <input id="username" type="text" name="username" class="textInput" placeholder="Username">
+                       <div id="name_error" class="val_error"></div>
+                     </div>
+
+                     <div class="email_div">
+                       <input id="email" type="email" name="email" class="textInput" placeholder="Email" >
+                       <div id="email_error" class="val_error"></div>
+                     </div>
+
+                     <div class="password_div">
+                       <input id="password" type="password" name="password" class="textInput" placeholder="Password">
+                      <div id="password_error" class="val_error"></div>
+                     </div>
+
+                     <div class="pass_confirm_div">
+                       <input id="password_confirm" type="password" name="password_confirm" class="textInput" placeholder="Password Confirmation">
+                       <div id="password_confrim_error" class="val_error"></div>
+                     </div>
+
+                     <div class="">
+                       <input type="submit" value="Register" class="registerBtn" name="register">
+                       <div id="all_fields_required" class="val_error"></div>
+                  </div>
+<script type="text/javascript" src="formValidation.js"></script>
+
+               </form>
+               <?php
+
+               ?>
+  </div>
+
+<!--footer----------------------------------------------------------------------------->
+
+
+          <footer>
+            <div class="footer-wrapper">
+            <ul class="footer">
+              <li><a href="#">Terms and Privacy</a></li>
+              <li><a href="aboutUs-beforelogin.html">About</a></li>
+              <li><a href="contact-beforelogin.html">Contact</a></li>
+              <li><a href="aboutUs-beforelogin.html">FAQS</a></li>
+              <li><a href="https://www.instagram.com"><img class="instagram-icon" src = "img\instagram-icon.png"></a></li>
+              <li><a href="https://www.facebook.com"><img class="facebook-icon" src = "img\facebook-icon.png"></a></li>
+              <li><a href="#">English</a></li>
+              <li><a href="#">Dutch</a></li>
+            </ul>
+
+          </div>
+         </footer>
+</body>
+</html>
